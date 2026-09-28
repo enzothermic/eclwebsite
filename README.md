@@ -1,5 +1,6 @@
 # Electronic Ceramics Laboratory Website
 
+<<<<<<< HEAD
 Website for the **Electronic Ceramics Laboratory (ECL)** at **National Taiwan University**.
 
 This repository contains the working design and content structure for the laboratory website. It is intentionally a lightweight static website so it can eventually be uploaded to an NTU or MSE web server without installing a framework or running a server-side application.
@@ -33,10 +34,13 @@ Change: Replace the name with ...
 Change: Replace the research topic with ...
 Image: filename.jpg
 ```
+=======
+>>>>>>> 969cc59dfbb5e102dd54f5cbba76cd341027b2e9
 Website for the Electronic Ceramics Laboratory at National Taiwan University.
 
 ## Current site map
 
+<<<<<<< HEAD
 | Page | File | Intended content |
 | --- | --- | --- |
 | Home | `index.html` | Lab identity and short introduction |
@@ -68,6 +72,8 @@ The current website is a layout prototype and deliberately contains placeholders
 Please do not publish personal contact information or photographs until the relevant person has approved their use.
 
 ## Viewing the website locally
+=======
+>>>>>>> 969cc59dfbb5e102dd54f5cbba76cd341027b2e9
 - `index.html` - Home
 - `news.html` - News
 - `research.html` - Research
@@ -79,6 +85,7 @@ Please do not publish personal contact information or photographs until the rele
 - `about.html` - About
 - `contact.html` - Contact
 
+<<<<<<< HEAD
 No installation or build step is currently required. The site uses ordinary HTML and JavaScript plus Tailwind CSS from a CDN.
 ## Start the website
 
@@ -91,10 +98,17 @@ Open `index.html` in a web browser. This is sufficient for a quick review.
 
 From the project folder, start a small local web server:
 
+=======
+## Start the website
+
+Open a terminal in the project folder and run:
+
+>>>>>>> 969cc59dfbb5e102dd54f5cbba76cd341027b2e9
 ```powershell
 py -m http.server 8000
 ```
 
+<<<<<<< HEAD
 Then visit:
 
 ```text
@@ -175,3 +189,20 @@ The website should be considered ready for public deployment only after:
 2. The professor has approved the text, member list, publications, and images.
 3. The site maintainer has completed the testing checklist.
 4. MSE/NTU has approved the hosting location and domain configuration.
+=======
+## View the website
+
+Open this address in a web browser:
+
+<http://localhost:8000/>
+
+Keep the terminal open while viewing the website. An internet connection is required because the current design loads Tailwind CSS from its CDN.
+
+## Stop the website
+
+Return to the terminal running the server and press:
+
+```text
+Ctrl+C
+```
+>>>>>>> 969cc59dfbb5e102dd54f5cbba76cd341027b2e9
