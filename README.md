@@ -19,7 +19,6 @@ Website for the Electronic Ceramics Laboratory at National Taiwan University.
 
 Open a terminal in the project folder and run:
 
->>>>>>> 969cc59dfbb5e102dd54f5cbba76cd341027b2e9
 ```powershell
 py -m http.server 8000
 ```
@@ -39,4 +38,4 @@ Return to the terminal and press:
 ```text
 Ctrl+C
 ```
->>>>>>> 969cc59dfbb5e102dd54f5cbba76cd341027b2e9
+
