@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About the Electronic Ceramics Laboratory at National Taiwan University.">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="icon" href="ECL%20logo.png">
+  <title>About | Electronic Ceramics Laboratory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { navy: '#0F172A', 'lab-blue': '#2563EB', 'lab-cyan': '#0EA5C6', 'lab-green': '#19C98A' }, boxShadow: { soft: '0 18px 50px -24px rgba(15, 23, 42, 0.20)' } } } };
+  </script>
+  <style>
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .technical-grid { background-image: linear-gradient(rgba(37,99,235,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(37,99,235,.055) 1px,transparent 1px); background-size:32px 32px; }
+    ::selection { background:#BFDBFE; color:#0F172A; }
+  </style>
+</head>
+<body class="bg-white text-slate-700 antialiased">
+  <a href="#main-content" class="sr-only z-[100] rounded-md bg-navy px-4 py-3 text-sm font-semibold text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4">Skip to main content</a>
+  <div class="fixed inset-x-0 top-0 z-[60] grid h-3 grid-cols-3" aria-hidden="true"><div class="bg-[#1D6FB8]"></div><div class="bg-[#0DA8C3]"></div><div class="bg-[#20C58B]"></div></div>
+
+  <header class="fixed inset-x-0 top-3 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8" aria-label="Primary navigation">
+      <a href="index.html" class="group flex items-center gap-3" aria-label="Electronic Ceramics Laboratory home">
+        <span class="grid h-10 w-10 place-items-center rounded-lg bg-navy text-sm font-bold text-white transition-colors group-hover:bg-lab-blue">ECL</span>
+        <span class="leading-tight"><span class="block text-sm font-bold tracking-tight text-navy sm:text-base">Electronic Ceramics Laboratory</span><span class="block text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">National Taiwan University</span></span>
+      </a>
+      <div class="hidden items-center gap-1 rounded-xl border border-slate-200 bg-slate-100/80 p-1 shadow-sm xl:flex" aria-label="Page navigation">
+        <a href="index.html" class="rounded-lg px-2.5 py-2 text-[13px] font-semibold text-slate-600 hover:bg-white hover:text-lab-blue">Home</a>
+        <a href="news.html" class="rounded-lg px-2.5 py-2 text-[13px] font-semibold text-slate-600 hover:bg-white hover:text-lab-blue">News</a>
+        <a href="research.html" class="rounded-lg px-2.5 py-2 text-[13px] font-semibold text-slate-600 hover:bg-white hover:text-lab-blue">Research</a>
+        <a href="publications.html" class="rounded-lg px-2.5 py-2 text-[13px] font-semibold text-slate-600 hover:bg-white hover:text-lab-blue">Publications</a>
+        <a href="pi.html" class="rounded-lg px-2.5 py-2 text-[13px] font-semibold text-slate-600 hover:bg-white hover:text-lab-blue">PI</a>
+        <a href="people.html" class="rounded-lg px-2.5 py-2 text-[13px] font-semibold text-slate-600 hover:bg-white hover:text-lab-blue">People</a>
+        <a href="teaching.html" class="rounded-lg px-2.5 py-2 text-[13px] font-semibold text-slate-600 hover:bg-white hover:text-lab-blue">Teaching</a>
+        <a href="facilities.html" class="rounded-lg px-2.5 py-2 text-[13px] font-semibold text-slate-600 hover:bg-white hover:text-lab-blue">Equipment &amp; Facilities</a>
+      </div>
+      <button id="menu-button" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-slate-200 text-navy hover:border-blue-200 hover:bg-blue-50 xl:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+        <svg id="menu-open-icon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg id="menu-close-icon" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white px-6 py-5 xl:hidden">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-2">
+        <a href="index.html" class="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 text-center text-sm font-semibold text-slate-700">Home</a>
+        <a href="news.html" class="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 text-center text-sm font-semibold text-slate-700">News</a>
+        <a href="research.html" class="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 text-center text-sm font-semibold text-slate-700">Research</a>
+        <a href="publications.html" class="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 text-center text-sm font-semibold text-slate-700">Publications</a>
+        <a href="pi.html" class="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 text-center text-sm font-semibold text-slate-700">PI</a>
+        <a href="people.html" class="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 text-center text-sm font-semibold text-slate-700">People</a>
+        <a href="teaching.html" class="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 text-center text-sm font-semibold text-slate-700">Teaching</a>
+        <a href="facilities.html" class="col-span-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 text-center text-sm font-semibold text-slate-700">Equipment &amp; Facilities</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="relative overflow-hidden border-b border-slate-200 bg-slate-50 pb-20 pt-40 sm:pt-44">
+      <div class="technical-grid absolute inset-y-0 right-0 w-1/2 opacity-80" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <nav class="mb-8 flex items-center gap-2 text-sm text-slate-500" aria-label="Breadcrumb"><a href="index.html" class="hover:text-lab-blue">Home</a><span aria-hidden="true">/</span><span class="font-semibold text-navy">About</span></nav>
+        <div class="max-w-4xl">
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-lab-blue">About the laboratory</p>
+          <h1 class="mt-5 text-4xl font-bold leading-tight tracking-tight text-navy sm:text-5xl lg:text-6xl">Materials science, engineered with purpose.</h1>
+          <p class="mt-7 max-w-3xl text-lg leading-8 text-slate-600">The Electronic Ceramics Laboratory connects fundamental understanding with precise processing to create functional materials for sensing, actuation, energy storage, and advanced electronics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24">
+      <div class="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-[0.82fr_1.18fr] lg:px-8">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-lab-blue">Our perspective</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">Connecting structure, process, and performance.</h2>
+        </div>
+        <div class="space-y-6 text-base leading-8 text-slate-600">
+          <p>Electronic ceramics sit at the heart of modern technologies, translating electrical, mechanical, and thermal inputs into useful functions. Their performance depends on decisions made across every scale—from point defects and crystal symmetry to interfaces, microstructure, and component architecture.</p>
+          <p>Our laboratory studies those connections as one continuous engineering problem. We combine composition design, powder synthesis, thermal processing, thin-film deposition, component fabrication, and high-precision measurement to understand why a material behaves as it does—and how to make that behavior reliable.</p>
+          <p>Based at National Taiwan University, we train researchers to move confidently between scientific fundamentals and practical engineering constraints while contributing to an open, collaborative research culture.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-slate-200 bg-slate-50 py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-3xl"><p class="text-sm font-bold uppercase tracking-[0.18em] text-lab-blue">What guides us</p><h2 class="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl">A rigorous, connected research culture.</h2></div>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="rounded-xl border border-slate-200 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-soft">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-blue-50 text-lg font-bold text-lab-blue">01</span>
+            <h3 class="mt-6 text-xl font-bold text-navy">Fundamental insight</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">We use structure–property relationships and careful controls to distinguish mechanism from correlation.</p>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-cyan-300 hover:shadow-soft">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-cyan-50 text-lg font-bold text-lab-cyan">02</span>
+            <h3 class="mt-6 text-xl font-bold text-navy">Process precision</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Repeatable processing and traceable parameters allow meaningful comparison across materials and devices.</p>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-emerald-300 hover:shadow-soft">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-emerald-50 text-lg font-bold text-emerald-600">03</span>
+            <h3 class="mt-6 text-xl font-bold text-navy">Engineering translation</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">We evaluate promising materials under component-relevant electrical, thermal, and mechanical conditions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+          <div><p class="text-sm font-bold uppercase tracking-[0.18em] text-lab-blue">How we work</p><h2 class="mt-4 text-3xl font-bold tracking-tight text-navy">One connected experimental loop.</h2><p class="mt-5 leading-7 text-slate-600">Results from characterization inform the next material design and processing decision.</p></div>
+          <ol class="grid gap-4 sm:grid-cols-2">
+            <li class="rounded-xl border border-slate-200 p-6"><span class="text-xs font-bold text-blue-600">01 / DESIGN</span><h3 class="mt-2 font-bold text-navy">Composition &amp; architecture</h3></li>
+            <li class="rounded-xl border border-slate-200 p-6"><span class="text-xs font-bold text-cyan-700">02 / MAKE</span><h3 class="mt-2 font-bold text-navy">Synthesis &amp; deposition</h3></li>
+            <li class="rounded-xl border border-slate-200 p-6"><span class="text-xs font-bold text-emerald-700">03 / MEASURE</span><h3 class="mt-2 font-bold text-navy">Structure &amp; properties</h3></li>
+            <li class="rounded-xl border border-slate-200 p-6"><span class="text-xs font-bold text-slate-600">04 / REFINE</span><h3 class="mt-2 font-bold text-navy">Model, validate &amp; iterate</h3></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-navy py-16 text-white">
+      <div class="mx-auto flex max-w-7xl flex-col gap-8 px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <div><p class="text-sm font-bold uppercase tracking-[0.18em] text-blue-300">Continue exploring</p><h2 class="mt-3 text-2xl font-bold">See the scientific questions driving our work.</h2></div>
+        <a href="research.html" class="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-6 py-3.5 text-sm font-bold text-navy hover:bg-blue-50 hover:text-lab-blue">Explore research <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 text-slate-400"><div class="grid h-1 grid-cols-3" aria-hidden="true"><div class="bg-[#1D6FB8]"></div><div class="bg-[#0DA8C3]"></div><div class="bg-[#20C58B]"></div></div><div class="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-9 sm:flex-row sm:items-center sm:justify-between lg:px-8"><div><p class="text-sm font-semibold text-white">Electronic Ceramics Laboratory</p><p class="mt-1 text-xs">National Taiwan University</p></div><p class="text-xs">© 2026 Electronic Ceramics Laboratory. All rights reserved.</p></div></footer>
+
+  <script>
+    const button=document.getElementById('menu-button'),menu=document.getElementById('mobile-menu'),openIcon=document.getElementById('menu-open-icon'),closeIcon=document.getElementById('menu-close-icon');
+    function closeMenu(){menu.classList.add('hidden');openIcon.classList.remove('hidden');closeIcon.classList.add('hidden');button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Open navigation menu');}
+    button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')==='true';menu.classList.toggle('hidden',open);openIcon.classList.toggle('hidden',!open);closeIcon.classList.toggle('hidden',open);button.setAttribute('aria-expanded',String(!open));button.setAttribute('aria-label',open?'Open navigation menu':'Close navigation menu');});
+    window.addEventListener('resize',()=>{if(window.innerWidth>=1280)closeMenu();});
+  </script>
+  <script src="placeholder-mode.js"></script>
+</body>
+</html>
