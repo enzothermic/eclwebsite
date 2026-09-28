@@ -1,21 +1,21 @@
-# Electronic Ceramics Laboratory Website
+# ECL Website
 
-Website for the Electronic Ceramics Laboratory at National Taiwan University.
+Electronic Ceramics Laboratory at National Taiwan University.
 
-## Current site map
+## Site Map
 
-- `index.html` - Home
-- `news.html` - News
-- `research.html` - Research
-- `publications.html` - Publications
-- `pi.html` - Principal Investigator
-- `people.html` - People
-- `teaching.html` - Teaching
-- `facilities.html` - Equipment & Facilities
-- `about.html` - About
-- `contact.html` - Contact
+- Home: `index.html`
+- News: `news.html`
+- Research: `research.html`
+- Publications: `publications.html`
+- Principal Investigator: `pi.html`
+- People: `people.html`
+- Teaching: `teaching.html`
+- Equipment and Facilities: `facilities.html`
+- About: `about.html`
+- Contact: `contact.html`
 
-## Start the website
+## Run the Website
 
 Open a terminal in the project folder and run:
 
@@ -23,17 +23,17 @@ Open a terminal in the project folder and run:
 py -m http.server 8000
 ```
 
-## View the website
+## View the Website
 
-Open this address in a web browser:
+Open the following address in a web browser:
 
-<http://localhost:8000/>
+<http://localhost:8000>
 
-Keep the terminal open while viewing the website. An internet connection is required because the current design loads Tailwind CSS from its CDN.
+Keep the terminal open while viewing the website.
 
-## Stop the website
+## Stop the Website
 
-Return to the terminal running the server and press:
+Return to the terminal and press:
 
 ```text
 Ctrl+C
