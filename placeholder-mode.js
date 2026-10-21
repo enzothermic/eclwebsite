@@ -16,22 +16,14 @@
     item.textContent = index === 0 ? 'Electronic Ceramics Laboratory' : index === 1 ? 'National Taiwan University' : '[PLACEHOLDER COPYRIGHT]';
   });
 
-  if (!main) return;
+  // Pages marked static keep their editable HTML content.
+  if (!main || main.dataset.content === 'static') return;
 
   const card = (label = '[PLACEHOLDER LABEL]', title = '[PLACEHOLDER TITLE]', body = '[PLACEHOLDER SHORT DESCRIPTION]') => `
     <article class="rounded-xl border border-slate-200 bg-white p-7 shadow-sm">
       <p class="text-xs font-bold uppercase tracking-[0.16em] text-lab-blue">${label}</p>
       <h3 class="mt-3 text-xl font-bold text-navy">${title}</h3>
       <p class="mt-4 text-sm leading-7 text-slate-500">${body}</p>
-    </article>`;
-
-  const personCard = (degree) => `
-    <article class="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm">
-      <div class="mx-auto grid h-24 w-24 place-items-center rounded-full bg-slate-100 text-sm font-bold text-slate-400">[PHOTO]</div>
-      <p class="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-lab-blue">${degree}</p>
-      <h3 class="mt-2 text-lg font-bold text-navy">[PLACEHOLDER NAME]</h3>
-      <p class="mt-3 text-sm leading-6 text-slate-500">[PLACEHOLDER PROJECT OR RESEARCH TOPIC]</p>
-      <p class="mt-4 text-sm font-semibold text-lab-blue">[PLACEHOLDER EMAIL]</p>
     </article>`;
 
   const sectionHeader = (eyebrow, heading, description = '[PLACEHOLDER SECTION DESCRIPTION]') => `
@@ -105,21 +97,6 @@
         <div>${sectionHeader('[PLACEHOLDER BIOGRAPHY LABEL]', '[PLACEHOLDER BIOGRAPHY TITLE]', '[PLACEHOLDER BIOGRAPHY PARAGRAPH. PLACEHOLDER BIOGRAPHY PARAGRAPH. PLACEHOLDER BIOGRAPHY PARAGRAPH.]')}
           <div class="mt-10 grid gap-4 sm:grid-cols-2">${card('[PLACEHOLDER]', '[PLACEHOLDER RESEARCH INTEREST]')}${card('[PLACEHOLDER]', '[PLACEHOLDER RESEARCH INTEREST]')}${card('[PLACEHOLDER]', '[PLACEHOLDER APPOINTMENT]')}${card('[PLACEHOLDER]', '[PLACEHOLDER EDUCATION]')}</div>
         </div>
-      </div></section>`,
-
-    'people.html': `
-      ${pageHero('People', '[PLACEHOLDER PEOPLE PAGE TITLE]', '[PLACEHOLDER TEAM INTRODUCTION]')}
-      <section class="py-24"><div class="mx-auto max-w-7xl px-6 lg:px-8">
-        ${sectionHeader('Graduate Researchers', 'Ph.D. Students', '[PLACEHOLDER PH.D. GROUP DESCRIPTION]')}
-        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">${personCard('Ph.D. Student')}${personCard('Ph.D. Student')}${personCard('Ph.D. Student')}</div>
-      </div></section>
-      <section class="border-y border-slate-200 bg-slate-50 py-24"><div class="mx-auto max-w-7xl px-6 lg:px-8">
-        ${sectionHeader('Graduate Researchers', "Master's Students", "[PLACEHOLDER MASTER'S GROUP DESCRIPTION]")}
-        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">${Array.from({ length: 9 }, () => personCard("Master's Student")).join('')}</div>
-      </div></section>
-      <section class="py-24"><div class="mx-auto max-w-7xl px-6 lg:px-8">
-        ${sectionHeader('Student Researchers', 'Undergraduate Students', '[PLACEHOLDER UNDERGRADUATE GROUP DESCRIPTION]')}
-        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">${personCard('Undergraduate Student')}${personCard('Undergraduate Student')}${personCard('Undergraduate Student')}</div>
       </div></section>`,
 
     'teaching.html': `
